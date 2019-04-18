@@ -8,7 +8,7 @@ class Boat < ActiveRecord::Base
   end 
   
   def self.dinghy
-    shorter than 20ft
+    where()
   end 
   
   def self.ship
