@@ -20,11 +20,11 @@ class Boat < ActiveRecord::Base
   end
   
   def self.without_a_captain
-    where(:captain == nil)
+    where(captain: [nil, ""])
   end
   
   def self.sailboats
-    all boats that are sailboats
+    where()
   end
   
   def self.with_three_classifications
