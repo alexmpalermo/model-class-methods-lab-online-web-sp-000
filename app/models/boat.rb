@@ -27,7 +27,7 @@ class Boat < ActiveRecord::Base
     all boats that are sailboats
   end
   
-  def with_three_classifications
+  def self.with_three_classifications
     all boats with 3 classifications 
   end 
 end
