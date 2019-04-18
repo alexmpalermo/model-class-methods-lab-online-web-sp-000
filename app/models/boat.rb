@@ -7,7 +7,7 @@ class Boat < ActiveRecord::Base
     first 5 boats 
   end 
   
-  def dinghy
+  def self.dinghy
     shorter than 20ft
   end 
   
