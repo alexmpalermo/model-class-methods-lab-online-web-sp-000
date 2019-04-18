@@ -15,7 +15,7 @@ class Boat < ActiveRecord::Base
     20ft or longer
   end 
   
-  def last_three_alphabetically
+  def self.last_three_alphabetically
     last 3 boats in order 
   end
   
