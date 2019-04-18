@@ -3,10 +3,10 @@ class Classification < ActiveRecord::Base
   has_many :boats, through: :boat_classifications
   
   def self.my_all
-    all classifications
+    #all classifications
   end
   
   def longest
-    classifications for longest boat 
+    #classifications for longest boat 
   end
 end
