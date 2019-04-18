@@ -23,7 +23,7 @@ class Boat < ActiveRecord::Base
     
   end
   
-  def sailboats
+  def self.sailboats
     all boats that are sailboats
   end
   
