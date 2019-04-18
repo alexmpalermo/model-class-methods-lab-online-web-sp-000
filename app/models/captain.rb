@@ -1,11 +1,11 @@
 class Captain < ActiveRecord::Base
   has_many :boats
   
-  def catamaran_operators
+  def self.catamaran_operators
     all captains of catamarans
   end 
   
-  def sailors
+  def self.sailors
     all captains w sailboats
   end
   
