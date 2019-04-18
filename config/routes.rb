@@ -1,3 +1,3 @@
 Rails.application.routes.draw do
-  resources :boats, :captains, 
+  resources :boats, :captains, :classifications
 end
