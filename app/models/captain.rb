@@ -2,7 +2,7 @@ class Captain < ActiveRecord::Base
   has_many :boats
   
   def self.catamaran_operators
-    #all captains of catamarans
+    
   end 
   
   def self.sailors
