@@ -10,10 +10,10 @@ class Captain < ActiveRecord::Base
   end
   
   def self.talented_seafarers
-    #captains of motorboats and sailboats
+   joins(boats: :classifications).where(classifications: {name: "Sailboat" OR name: "Motorboat"})
   end 
   
   def self.non_sailors
-    #people not captains of sailboats
+    where.not()
   end
 end
