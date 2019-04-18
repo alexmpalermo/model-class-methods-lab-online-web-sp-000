@@ -9,7 +9,7 @@ class Captain < ActiveRecord::Base
     all captains w sailboats
   end
   
-  def talented_seafarers
+  def self.talented_seafarers
     captains of motorboats and sailboats
   end 
   
