@@ -13,7 +13,7 @@ class Captain < ActiveRecord::Base
     captains of motorboats and sailboats
   end 
   
-  def non_sailors
+  def self.non_sailors
     people not captains of sailboats
   end
 end
