@@ -24,7 +24,7 @@ class Boat < ActiveRecord::Base
   end
   
   def self.sailboats
-    joins(classifications)where(classification: sailboat)
+    joins(:classifications).where(classification: sailboat)
   end
   
   def self.with_three_classifications
