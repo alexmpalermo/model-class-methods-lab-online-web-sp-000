@@ -28,6 +28,6 @@ class Boat < ActiveRecord::Base
   end
   
   def self.with_three_classifications
-    all boats with 3 classifications 
+    joins(:classifications).where() 
   end 
 end
