@@ -11,7 +11,7 @@ class Boat < ActiveRecord::Base
     shorter than 20ft
   end 
   
-  def ship
+  def self.ship
     20ft or longer
   end 
   
